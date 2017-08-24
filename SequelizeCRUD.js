@@ -59,7 +59,7 @@ app.get('/api/users/:id', function (req, res) {
 //rest api to create a new record into mysql database
 app.post('/api/users', function (req, res) {
     var postData = req.body;
-    var username = req.body.username; //bodyParser does the magic
+    var username = req.body.username;
     var password = req.body.password;
 
     User.build

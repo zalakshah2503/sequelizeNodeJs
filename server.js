@@ -30,7 +30,7 @@ require('./config/passport')(app,passport);
 
 app.set('view engine', 'ejs');
 
-// routes
+// route
 require('./app/routes.js')(app, passport);
 
 var server = app.listen(8081, "localhost", function () {
